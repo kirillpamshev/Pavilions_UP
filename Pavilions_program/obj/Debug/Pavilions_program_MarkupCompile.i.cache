@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\White_Tiger\source\repos\Pavilions_program\App.xaml
-7-1610748210
+101665428372
 
-12-889184084
+15-1964981782
 13-1505183044
-Addition.xaml;Editor.xaml;MainMenu.xaml;MainWindow.xaml;ManagerC.xaml;Rentors.xaml;ShowPavilions.xaml;
+Addition.xaml;AddRenterWindow.xaml;EditExistRenter.xaml;Editor.xaml;MainMenu.xaml;MainWindow.xaml;ManagerC.xaml;Rentors.xaml;RentorsAdmin.xaml;ShowPavilions.xaml;
 
 True
 

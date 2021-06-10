@@ -9,7 +9,8 @@
         Title="MainMenu" Height="450" Width="800">
     <Grid>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="360,373,0,0" VerticalAlignment="Top" Width="75" Click="Back_click"/>
-        <Button x:Name="shoping_center" Content="Торговые центры" HorizontalAlignment="Left" Margin="337,171,0,0" VerticalAlignment="Top" Width="123" Height="36" Click="shoping_center_Click" Visibility="Hidden"/>
+        <Button x:Name="shoping_center" Content="Торговые центры" HorizontalAlignment="Left" Margin="339,179,0,0" VerticalAlignment="Top" Width="123" Height="36" Click="shoping_center_Click" Visibility="Hidden" />
+        <Button x:Name="rentors" Content="Арендаторы&#xD;&#xA;(Компании)" HorizontalAlignment="Left" Margin="339,179,0,0" VerticalAlignment="Top" Width="123" Height="36" Click="rentors_Click" Visibility="Hidden"/>
 
     </Grid>
 </Window>

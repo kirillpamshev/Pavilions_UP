@@ -25,8 +25,7 @@ namespace Pavilions_program
 
             if (name_role == "Администратор")
             {
-             
-
+                rentors.Visibility = Visibility.Visible;
             }
             else if (name_role == "Менеджер А")
             {
@@ -55,6 +54,11 @@ namespace Pavilions_program
         private void shoping_center_Click(object sender, RoutedEventArgs e)
         {
             new ManagerC(connection, this, id_employee);
+        }
+
+        private void rentors_Click(object sender, RoutedEventArgs e)
+        {
+            new RentorsAdmin(connection, this);
         }
     }
 }

@@ -25,3 +25,9 @@ C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\Editor.g.cs
 C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\Editor.baml
 C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\Rentors.g.cs
 C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\Rentors.baml
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\RentorsAdmin.g.cs
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\RentorsAdmin.baml
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\AddRenterWindow.g.cs
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\AddRenterWindow.baml
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\EditExistRenter.g.cs
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\EditExistRenter.baml

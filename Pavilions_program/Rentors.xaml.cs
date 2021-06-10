@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Data.SqlClient;
 
@@ -92,27 +89,36 @@ namespace Pavilions_program
         private void ToRentAct(object sender, RoutedEventArgs e)
         {
             renters_class row = (renters_class)grid.SelectedItem;
-            if (row != null)
+           /* if (date_end_box.SelectedDate > date_end_box.SelectedDate)
+            {*/
+                if (row != null)
+                {
+                    string id_rent = (DateTime.Now).ToString("yyyyddMMss");
+                    string id_selected_renter = row.id_renter;
+                    string date_first = date_start_box.Text;
+                    string date_second = date_end_box.Text;
+
+                    try
+                    {
+                        string sqlexpression = "INSERT_NEW_RENT @id_rent = " + id_rent + ", @id_renter = " + id_selected_renter + ", @shop_center = " + id_shop_center + ", @id_employee = " + id_employee + ", @id_pavilion = '" + id_pavilion + "', @date_start = '" + date_first + "', @date_end = '" + date_second + "'";
+                        SqlCommand command = new SqlCommand(sqlexpression, connection);
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Заявка оформлмена! Спасибо!");
+                    }
+                    catch (SqlException er)
+                    {
+                        MessageBox.Show(er.Message);
+                    }
+
+                }
+            /*}
+            else
             {
-                string id_rent = (DateTime.Now).ToString("yyyyddMM");
-                string id_selected_renter = row.id_renter;
-                string date_first = date_start.Text;
-                string date_second = date_end.Text;
+                MessageBox.Show("Выберите корректную дату!");
 
-                try
-                {
-                    string sqlexpression = "INSERT_NEW_RENT @id_rent = " + id_rent + ", @id_renter = " + id_selected_renter + ", @shop_center = " + id_shop_center + ", @id_employee = " + id_employee + ", @id_pavilion = '" + id_pavilion + "', @date_start = '"+ date_first +"', @date_end = '"+ date_second +"'";
-                    SqlCommand command = new SqlCommand(sqlexpression, connection);
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Заявка оформлмена! Спасибо!");
-                }
-                catch (SqlException er)
-                {
-                    MessageBox.Show(er.Message);
-                }
-
-            }
+            }*/
         }
-
     }
+
 }
+

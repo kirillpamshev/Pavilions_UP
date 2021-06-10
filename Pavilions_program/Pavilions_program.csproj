@@ -55,16 +55,33 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddRenterWindow.xaml.cs">
+      <DependentUpon>AddRenterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditExistRenter.xaml.cs">
+      <DependentUpon>EditExistRenter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Editor.xaml.cs">
       <DependentUpon>Editor.xaml</DependentUpon>
     </Compile>
     <Compile Include="Rentors.xaml.cs">
       <DependentUpon>Rentors.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RentorsAdmin.xaml.cs">
+      <DependentUpon>RentorsAdmin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ShowPavilions.xaml.cs">
       <DependentUpon>ShowPavilions.xaml</DependentUpon>
     </Compile>
     <Page Include="Addition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddRenterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditExistRenter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Rentors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RentorsAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
