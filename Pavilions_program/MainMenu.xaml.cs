@@ -21,7 +21,7 @@ namespace Pavilions_program
             this.name_role = name_role;
             this.Show();
             parent.Visibility = Visibility.Hidden;
-            
+
 
             if (name_role == "Администратор")
             {
@@ -29,14 +29,13 @@ namespace Pavilions_program
             }
             else if (name_role == "Менеджер А")
             {
-            
-
+                StatShopCenters.Visibility = Visibility.Visible;
             }
             else if (name_role == "Менеджер С")
             {
                 shoping_center.Visibility = Visibility.Visible;
             }
-            else 
+            else
             {
                 MessageBox.Show("Произошла неизвестная ошибка! Перезагрузите систему.");
                 parent.Visibility = Visibility.Visible;
@@ -59,6 +58,11 @@ namespace Pavilions_program
         private void rentors_Click(object sender, RoutedEventArgs e)
         {
             new RentorsAdmin(connection, this);
+        }
+
+        private void StatShopCenters_Click(object sender, RoutedEventArgs e)
+        {
+            new ManagerA(connection, this);
         }
     }
 }

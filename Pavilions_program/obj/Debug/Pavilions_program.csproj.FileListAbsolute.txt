@@ -31,3 +31,5 @@ C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\AddRenterWindow.g.
 C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\AddRenterWindow.baml
 C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\EditExistRenter.g.cs
 C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\EditExistRenter.baml
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\ManagerA.g.cs
+C:\Users\White_Tiger\source\repos\Pavilions_program\obj\Debug\ManagerA.baml

@@ -32,7 +32,33 @@ namespace Pavilions_program
 
         private void accept_click(object sender, RoutedEventArgs e)
         {
-             
+            try
+            {
+                string name = name_text.Text;
+                string city = city_text.Text;
+                string phone = phone_text.Text;
+                string street = street_text.Text;
+                string id_rent = DateTime.Now.ToString("yyyyddss");
+                string sqlexpression = "INSERT INTO RENTORS VALUES(@idrentvalue, @namevalue, @phonevalue, @cityvalue, @streetvalue, 'Активен') ";
+                SqlCommand command = new SqlCommand(sqlexpression, connection);
+                SqlParameter par = new SqlParameter("@namevalue", name_text.Text);
+                command.Parameters.Add(par);
+                SqlParameter par1 = new SqlParameter("@idrentvalue", id_rent);
+                command.Parameters.Add(par1);
+                SqlParameter par2 = new SqlParameter("@phonevalue", phone_text.Text);
+                command.Parameters.Add(par2);
+                SqlParameter par3 = new SqlParameter("@cityvalue", city_text.Text);
+                command.Parameters.Add(par3);
+                SqlParameter par4 = new SqlParameter("@streetvalue", street_text.Text);
+                command.Parameters.Add(par4);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Запись добавлена!");
+                ((RentorsAdmin)parent).function_show();
+            }
+            catch (SqlException er)
+            {
+                MessageBox.Show(er.Number + "." + er.Message);
+            }
         }
     }
 }

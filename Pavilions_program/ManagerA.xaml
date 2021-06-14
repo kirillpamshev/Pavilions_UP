@@ -1,0 +1,18 @@
+﻿<Window x:Class="Pavilions_program.ManagerA"
+        WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pavilions_program"
+        mc:Ignorable="d"
+        Title="ManagerA" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" Margin="359,366,0,0" VerticalAlignment="Top" Width="75" Click="Back_Click" IsCancel="True"/>
+        <Label Content="Выберите ТЦ:" HorizontalAlignment="Left" Margin="55,60,0,0" VerticalAlignment="Top" Width="151"/>
+        <ComboBox x:Name="shop_text" HorizontalAlignment="Left" Margin="55,91,0,0" VerticalAlignment="Top" Width="151" SelectionChanged="ComboBox_SelectionChanged"/>
+        <DataGrid IsReadOnly="True" x:Name="grid" HorizontalAlignment="Left" Height="311" Margin="230,50,0,0" VerticalAlignment="Top" Width="519"/>
+        <Label HorizontalContentAlignment="Center" Content="Просмотр статистической информации" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Width="774"/>
+
+    </Grid>
+</Window>

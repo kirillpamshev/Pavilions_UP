@@ -64,6 +64,9 @@
     <Compile Include="Editor.xaml.cs">
       <DependentUpon>Editor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ManagerA.xaml.cs">
+      <DependentUpon>ManagerA.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Rentors.xaml.cs">
       <DependentUpon>Rentors.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ManagerA.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ManagerC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
